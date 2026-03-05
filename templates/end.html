@@ -29,10 +29,14 @@
         <img class="rez__img" src="../../static/img/planet_medium.svg" alt="">
         <span>Your reult {{result}} kWh</span>
         <span>Your home's energy efficiency is average!</span>
+        <span>Want to help the ecology? Fill out the form, and we will create an eco-friendly assembly for you!</span>
+        <a href="/form" class="main__link">Fill out the form</a>
         {%elif result >= 300%}
         <img class="rez__img" src="../../static/img/planet_bad.svg" alt="">
         <span>Your reult {{result}} kWh</span>
         <span>Your home's energy efficiency is below average!</span>
+        <span>Want to help the ecology? Fill out the form, and we will create an eco-friendly assembly for you!</span>
+        <a href="/form" class="main__link">Fill out the form</a>
         {%endif%}
     </div>
     {% endblock %}
